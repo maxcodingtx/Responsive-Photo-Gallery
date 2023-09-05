@@ -1,0 +1,23 @@
+
+img {
+    width: 100%;
+}
+
+
+.image-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+
+@media (min-width: 40em) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 60em) {
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
